@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form action="http://localhost:3000/api/v1/notes" method="post">
+        <label for="">Nombre</label>
+        <input type="text" name="name">
+        <label for="ingles">Nota Inglés</label>
+        <input type="number" id="ingles" name="notes[ingles]" step="any">
+        <label for="desarrollo">Nota Desarrollo</label>
+        <input type="number" id="desarrollo" name="notes[desarrollo]" step="any">
+        
+        
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
